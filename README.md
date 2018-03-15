@@ -1,6 +1,11 @@
-# image
+#  image
 
 `image/jpeg` base pure go image utility.
+
+[![GoDoc](https://godoc.org/github.com/go-oss/image?status.svg)](https://godoc.org/github.com/go-oss/image)
+[![Build Status](https://travis-ci.org/go-oss/image.svg?branch=master)](https://travis-ci.org/go-oss/image)
+[![codecov](https://codecov.io/gh/go-oss/image/branch/master/graph/badge.svg)](https://codecov.io/gh/go-oss/image)
+[![Go Report Card](https://goreportcard.com/badge/github.com/go-oss/image)](https://goreportcard.com/report/github.com/go-oss/image)
 
 ## features
 - Decode jpeg with quality value.

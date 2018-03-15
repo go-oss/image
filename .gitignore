@@ -1,4 +1,9 @@
 .*
 !.gitignore
 
+# go
 vendor
+
+# ci
+!.travis.yml
+coverage.txt
