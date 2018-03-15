@@ -1,5 +1,6 @@
-#!/usr/bin/env bash -xeu
+#!/usr/bin/env bash
 
+set -xeu
 echo "" > coverage.txt
 
 for d in $(go list ./...); do
