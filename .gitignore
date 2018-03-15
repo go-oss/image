@@ -1,4 +1,10 @@
 .*
 !.gitignore
 
+# go
 vendor
+
+# ci
+!.travis.yml
+!.codeclimate.yml
+coverage.txt

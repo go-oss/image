@@ -1,0 +1,13 @@
+language: go
+sudo: false
+go:
+  - "1.9.x"
+  - "1.10.x"
+before_install:
+  - go get github.com/golang/dep/cmd/dep
+install:
+  - $GOPATH/bin/dep ensure -v -vendor-only
+script:
+  - ./coverage.sh
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
