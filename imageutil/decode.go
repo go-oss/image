@@ -56,7 +56,7 @@ func Decode(file io.Reader) (*Image, error) {
 
 		// check EXIF and apply orientation
 		meta, decodeErr := exif.Decode(buff)
-		// if error occured, exif is invalid and discarded.
+		// if error occurred, exif is invalid and discarded.
 		if decodeErr == nil {
 			newImg, _ := applyOrientation(img.Image, meta)
 			if newImg != nil {
