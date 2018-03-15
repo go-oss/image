@@ -6,4 +6,5 @@ vendor
 
 # ci
 !.travis.yml
+!.codeclimate.yml
 coverage.txt

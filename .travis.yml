@@ -4,16 +4,10 @@ go:
   - "1.9.x"
   - "1.10.x"
 before_install:
-  - go get github.com/golang/dep/...
+  - go get github.com/golang/dep/cmd/dep
 install:
   - $GOPATH/bin/dep ensure -v -vendor-only
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
 script:
   - ./coverage.sh
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 after_success:
   - bash <(curl -s https://codecov.io/bash)
