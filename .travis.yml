@@ -1,12 +1,9 @@
 language: go
 sudo: false
 go:
-  - "1.9.x"
-  - "1.10.x"
-before_install:
-  - go get github.com/golang/dep/cmd/dep
-install:
-  - $GOPATH/bin/dep ensure -v -vendor-only
+  - "1.13.x"
+  - "1.14.x"
+  - "master"
 script:
   - ./coverage.sh
 after_success:

@@ -13,7 +13,7 @@
 - Apply EXIF orientation to image pixels.
 
 ## compatibility
-- Go 1.9+
+- Go 1.13+
 
 ## usage
 To install `imageutil` package:
