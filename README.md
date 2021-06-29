@@ -2,11 +2,11 @@
 
 `image/jpeg` base pure go image utility.
 
-[![GoDoc](https://godoc.org/github.com/go-oss/image?status.svg)](https://godoc.org/github.com/go-oss/image)
-[![Build Status](https://travis-ci.org/go-oss/image.svg?branch=master)](https://travis-ci.org/go-oss/image)
-[![codecov](https://codecov.io/gh/go-oss/image/branch/master/graph/badge.svg)](https://codecov.io/gh/go-oss/image)
-[![Maintainability](https://api.codeclimate.com/v1/badges/1d34d57d8c26f502ce7d/maintainability)](https://codeclimate.com/github/go-oss/image/maintainability)
-[![Go Report Card](https://goreportcard.com/badge/github.com/go-oss/image)](https://goreportcard.com/report/github.com/go-oss/image)
+[![Go Reference][go-dev-img]][go-dev-url]
+![Test][github-actions-img]
+[![codecov][codecov-img]][codecov-url]
+[![Maintainability][codeclimate-img]][codeclimate-url]
+[![Go Report Card][goreportcard-img]][goreportcard-url]
 
 ## features
 - Decode jpeg with quality value.
@@ -48,3 +48,13 @@ if err != nil {
     log.Fatal(err)
 }
 ```
+
+[go-dev-img]: https://pkg.go.dev/badge/github.com/go-oss/image.svg
+[go-dev-url]: https://pkg.go.dev/github.com/go-oss/image
+[github-actions-img]: https://github.com/go-oss/image/workflows/Test/badge.svg?branch=master
+[codecov-img]: https://codecov.io/gh/go-oss/image/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/go-oss/image
+[codeclimate-img]: https://api.codeclimate.com/v1/badges/1d34d57d8c26f502ce7d/maintainability
+[codeclimate-url]: https://codeclimate.com/github/go-oss/image/maintainability
+[goreportcard-img]: https://goreportcard.com/badge/github.com/go-oss/image
+[goreportcard-url]: https://goreportcard.com/report/github.com/go-oss/image
