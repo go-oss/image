@@ -7,7 +7,7 @@ import (
 	"image"
 	"io"
 
-	"github.com/go-oss/image/jpeg"
+	jq "github.com/go-oss/image/jpeg"
 	"github.com/rwcarlsen/goexif/exif"
 
 	// use webp decoder
@@ -49,7 +49,7 @@ func Decode(file io.Reader) (*Image, error) {
 	}
 
 	if mimeType == JPEG {
-		img.Image, img.Quality, err = jpeg.DecodeWithQuality(reader)
+		img.Image, img.Quality, err = jq.DecodeWithQuality(reader)
 		if err != nil {
 			return nil, err
 		}

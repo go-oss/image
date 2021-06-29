@@ -5,10 +5,10 @@ import (
 	"errors"
 	"fmt"
 	"image"
+	"image/jpeg"
 	"io"
 
 	"github.com/disintegration/imaging"
-	"github.com/go-oss/image/jpeg"
 	"github.com/rwcarlsen/goexif/exif"
 )
 
