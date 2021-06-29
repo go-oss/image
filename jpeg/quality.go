@@ -1,4 +1,4 @@
-// Copyright 2018 Takenori Nakagawa.
+// Copyright 2020 Takenori Nakagawa.
 // MIT License
 
 package jpeg
@@ -6,6 +6,7 @@ package jpeg
 import (
 	"image"
 	"io"
+	_ "unsafe" // for go:linkname
 )
 
 func isZero(arr [blockSize]int32) bool {
@@ -120,3 +121,10 @@ func DecodeWithQuality(r io.Reader) (image.Image, int, error) {
 	quality := d.quality()
 	return img, int(quality), err
 }
+
+func (d *decoder) decode(r io.Reader, configOnly bool) (image.Image, error) {
+	return decode(d, r, configOnly)
+}
+
+//go:linkname decode image/jpeg.(*decoder).decode
+func decode(d *decoder, r io.Reader, configOnly bool) (image.Image, error)

@@ -1,9 +1,8 @@
 package imageutil
 
 import (
+	"image/jpeg"
 	"io"
-
-	"github.com/go-oss/image/jpeg"
 )
 
 const defaultJPEGQuality = 95
