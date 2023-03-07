@@ -10,5 +10,5 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rwcarlsen/goexif v0.0.0-20180110181140-17202558c8d9
 	github.com/stretchr/testify v1.2.1
-	golang.org/x/image v0.0.0-20171214225156-12117c17ca67
+	golang.org/x/image v0.5.0
 )
